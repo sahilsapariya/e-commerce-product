@@ -5,6 +5,10 @@ import { useState } from "react";
 const ProductDesc = () => {
   const [quantity, setQuantity] = useState(0);
 
+  const handleCart = () => {
+    console.log("product added to cart");
+  };
+
   return (
     <div className="p-5 lg:w-1/2">
       <p className="uppercase tracking-[4px] text-sm text-orange-400 font-bold">
@@ -15,8 +19,8 @@ const ProductDesc = () => {
       </h1>
       <p className="text-sm text-slate-400 font-medium lg:text-base">
         These low-profile sneakers are your perfect casual wear companion.
-        Featuring a durable rubber outer sole, they&apos;ll withstand everything the
-        weather can offer.
+        Featuring a durable rubber outer sole, they&apos;ll withstand everything
+        the weather can offer.
       </p>
 
       <div className="flex lg:flex-col lg:items-start justify-between my-3 lg:my-5 lg:gap-2">
@@ -55,8 +59,14 @@ const ProductDesc = () => {
         </div>
 
         <div className="lg:w-2/3 flexCenter">
-          <button className="w-full bg-orange-500 text-white font-bold py-3 gap-3 rounded-lg flexCenter">
-            <Image src={"/icon-cart.svg"} alt="cart" width={16} height={16} className="fill-current text-white" />
+          <button className="w-full bg-orange-500 text-white font-bold py-3 gap-3 rounded-lg flexCenter hover:opacity-75 transition shadow-orange-200 shadow-lg drop-shadow-lg">
+            <Image
+              src={"/icon-cart-white.svg"}
+              alt="cart"
+              width={16}
+              height={16}
+              onClick={handleCart}
+            />
             <span>Add to cart</span>
           </button>
         </div>
