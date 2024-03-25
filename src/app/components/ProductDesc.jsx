@@ -15,7 +15,7 @@ const ProductDesc = () => {
       </h1>
       <p className="text-sm text-slate-400 font-medium lg:text-base">
         These low-profile sneakers are your perfect casual wear companion.
-        Featuring a durable rubber outer sole, they'll withstand everything the
+        Featuring a durable rubber outer sole, they&apos;ll withstand everything the
         weather can offer.
       </p>
 

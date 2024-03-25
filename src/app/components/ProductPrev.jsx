@@ -55,13 +55,15 @@ const DesktopView = () => {
 
 const MobileView = () => {
   return (
-    <div className="flex overflow-x-auto hide-scrollbar h-[300px] max-w-[600px] mx-auto">
+    <div className="flex overflow-x-auto hide-scrollbar h-[325px] max-w-[600px] mx-auto">
       {PRODUCT_IMAGES.map((image, index) => {
         return (
           <div key={index} className="w-full flex-shrink-0">
-            <img
+            <Image
               src={image.src}
               alt={image.alt}
+              width={2000}
+              height={2000}
               className="object-cover h-full w-full"
               style={{ minWidth: "100%" }}
             />
